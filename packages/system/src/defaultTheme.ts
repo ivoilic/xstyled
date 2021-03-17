@@ -465,6 +465,23 @@ export const defaultTheme = {
     pulse: 'x-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
     bounce: 'x-bounce 1s infinite',
   },
+  states: {
+    motionSafe: '@media (prefers-reduced-motion: no-preference)',
+    motionReduce: '@media (prefers-reduced-motion: reduce)',
+    first: '&:first-child',
+    last: '&:last-child',
+    odd: '&:odd',
+    even: '&:even',
+    visited: '&:visited',
+    checked: '&:checked',
+    focusWithin: '&:focus-within',
+    hover: '&:hover',
+    focus: '&:focus',
+    focusVisible: '&:focus-visible',
+    active: '&:active',
+    disabled: '&:disabled',
+    placeholder: '&::placeholder',
+  },
 }
 
 export type DefaultTheme = typeof defaultTheme
